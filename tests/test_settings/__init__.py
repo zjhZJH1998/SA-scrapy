@@ -1,6 +1,5 @@
 import six
 import unittest
-import warnings
 
 from scrapy.settings import (BaseSettings, Settings, SettingsAttribute,
                              SETTINGS_PRIORITIES, get_settings_priority)
@@ -320,13 +319,14 @@ class BaseSettingsTest(unittest.TestCase):
                           'TEST_BASE': BaseSettings({1: 1, 2: 2}, 'project'),
                           'TEST': BaseSettings({1: 10, 3: 30}, 'default'),
                           'HASNOBASE': BaseSettings({3: 3000}, 'default')})
-        self.assertDictEqual(s.copy_to_dict(),
-                            {'HASNOBASE': {3: 3000},
-                             'TEST': {1: 10, 3: 30},
-                             'TEST_BASE': {1: 1, 2: 2},
-                             'TEST_BOOLEAN': False,
-                             'TEST_LIST': [1, 2],
-                             'TEST_STRING': 'a string'})
+        self.assertDictEqual(s.copy_to_dict(), {
+            'HASNOBASE': {3: 3000},
+            'TEST': {1: 10, 3: 30},
+            'TEST_BASE': {1: 1, 2: 2},
+            'TEST_BOOLEAN': False,
+            'TEST_LIST': [1, 2],
+            'TEST_STRING': 'a string'
+        })
 
     def test_freeze(self):
         self.settings.freeze()

@@ -137,10 +137,6 @@ class S3FeedStorageTest(unittest.TestCase):
     @mock.patch('scrapy.conf.settings', new={'AWS_ACCESS_KEY_ID': 'conf_key',
                 'AWS_SECRET_ACCESS_KEY': 'conf_secret'}, create=True)
     def test_parse_credentials(self):
-        try:
-            import boto
-        except ImportError:
-            raise unittest.SkipTest("S3FeedStorage requires boto")
         aws_credentials = {'AWS_ACCESS_KEY_ID': 'settings_key',
                            'AWS_SECRET_ACCESS_KEY': 'settings_secret'}
         crawler = get_crawler(settings_dict=aws_credentials)
@@ -408,9 +404,9 @@ class FeedExportTest(unittest.TestCase):
         header = self.MyItem.fields.keys()
         rows_csv = [
             {'egg': 'spam1', 'foo': 'bar1', 'baz': ''},
-            {'egg': '',      'foo': 'bar2', 'baz': ''},
+            {'egg': '', 'foo': 'bar2', 'baz': ''},
             {'egg': 'spam3', 'foo': 'bar3', 'baz': 'quux3'},
-            {'egg': 'spam4', 'foo': '',     'baz': ''},
+            {'egg': 'spam4', 'foo': '', 'baz': ''},
         ]
         rows_jl = [dict(row) for row in items]
         yield self.assertExportedCsv(items, header, rows_csv, ordered=False)
@@ -425,10 +421,10 @@ class FeedExportTest(unittest.TestCase):
         header = ["foo", "baz", "hello"]
         settings = {'FEED_EXPORT_FIELDS': header}
         rows = [
-            {'foo': 'bar1', 'baz': '',      'hello': ''},
-            {'foo': 'bar2', 'baz': '',      'hello': 'world2'},
+            {'foo': 'bar1', 'baz': '', 'hello': ''},
+            {'foo': 'bar2', 'baz': '', 'hello': 'world2'},
             {'foo': 'bar3', 'baz': 'quux3', 'hello': ''},
-            {'foo': '',     'baz': '',      'hello': 'world4'},
+            {'foo': '', 'baz': '', 'hello': 'world4'},
         ]
         yield self.assertExported(items, header, rows,
                                   settings=settings, ordered=True)
@@ -481,30 +477,31 @@ class FeedExportTest(unittest.TestCase):
     @defer.inlineCallbacks
     def test_export_encoding(self):
         items = [dict({'foo': u'Test\xd6'})]
-        header = ['foo']
 
         formats = {
             'json': u'[{"foo": "Test\\u00d6"}]'.encode('utf-8'),
             'jsonlines': u'{"foo": "Test\\u00d6"}\n'.encode('utf-8'),
-            'xml': u'<?xml version="1.0" encoding="utf-8"?>\n<items><item><foo>Test\xd6</foo></item></items>'.encode('utf-8'),
+            'xml': u'<?xml version="1.0" encoding="utf-8"?>\n<items><item><foo>Test\xd6</foo></item></items>'.encode(
+                'utf-8'),
             'csv': u'foo\r\nTest\xd6\r\n'.encode('utf-8'),
         }
 
-        for format, expected in formats.items():
-            settings = {'FEED_FORMAT': format, 'FEED_EXPORT_INDENT': None}
+        for _format, expected in formats.items():
+            settings = {'FEED_FORMAT': _format, 'FEED_EXPORT_INDENT': None}
             data = yield self.exported_data(items, settings)
             self.assertEqual(expected, data)
 
         formats = {
             'json': u'[{"foo": "Test\xd6"}]'.encode('latin-1'),
             'jsonlines': u'{"foo": "Test\xd6"}\n'.encode('latin-1'),
-            'xml': u'<?xml version="1.0" encoding="latin-1"?>\n<items><item><foo>Test\xd6</foo></item></items>'.encode('latin-1'),
+            'xml': u'<?xml version="1.0" encoding="latin-1"?>\n<items><item><foo>Test\xd6</foo></item></items>'.encode(
+                'latin-1'),
             'csv': u'foo\r\nTest\xd6\r\n'.encode('latin-1'),
         }
 
         settings = {'FEED_EXPORT_INDENT': None, 'FEED_EXPORT_ENCODING': 'latin-1'}
-        for format, expected in formats.items():
-            settings['FEED_FORMAT'] = format
+        for _format, expected in formats.items():
+            settings['FEED_FORMAT'] = _format
             data = yield self.exported_data(items, settings)
             self.assertEqual(expected, data)
 

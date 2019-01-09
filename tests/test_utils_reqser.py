@@ -16,7 +16,8 @@ class RequestSerializationTest(unittest.TestCase):
         self._assert_serializes_ok(r)
 
     def test_all_attributes(self):
-        r = Request("http://www.example.com",
+        r = Request(
+            "http://www.example.com",
             callback=self.spider.parse_item,
             errback=self.spider.handle_error,
             method="POST",
@@ -26,7 +27,8 @@ class RequestSerializationTest(unittest.TestCase):
             encoding='latin-1',
             priority=20,
             meta={'a': 'b'},
-            flags=['testFlag'])
+            flags=['testFlag'],
+        )
         self._assert_serializes_ok(r, spider=self.spider)
 
     def test_latin1_body(self):
