@@ -12,3 +12,16 @@ Developer(s): Scrapinghub, Ltd.\
 Stable release: 1.7.3, / 1 August 2019; 6 days ago
 
 While the development is open-source, the amount of documentation about contributing is limited. This results in a project where programming is not done through conventions or guidelines but with a strong focus on getting things to work. Therefore, this document as a whole can serve as a helpful introduction to prospective developers looking to better understand the architecture to which they might contribute.
+
+## Table of contents
+
+- [Introduction](#Introduction)
+- [Stakeholders](#Stakeholders)
+- [Context View](#Context-view)
+- [Development View](#Development-view)
+
+## Introduction
+
+## Stakeholders
+
+## Development-view
