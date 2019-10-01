@@ -12,9 +12,9 @@
   -Finish parts of the documents
  
 ## Tasks assignments
--王子豪：write introduction and arrange the documents
--王怿临：write content view part
--王初程：write stakeholders part
+-王子豪：write introduction and arrange the documents\
+-王怿临：write content view part\
+-王初程：write stakeholders part\
 -张新豪：write development view part
 
 ## Outcomes of this stage
