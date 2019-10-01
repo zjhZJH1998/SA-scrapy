@@ -115,7 +115,7 @@ The following figure shows the Power Interest Grid. Power Interest Grid contains
 
 ## Content-view
 
-A context view describes the relationships, dependencies, and the interactions between the system and its environment.Many architecture descriptions focus on views that model the system’s internal structures, data elements, interactions, and operation. Architects tend to assume that the “outward-facing” information — the system’s runtime context, its scope and requirements, and so forth – is clearly and unambiguously defined elsewhere. However, you often need to include a definition of the system’s context as part of your architectural description.<a name="#ref_con1">[2]</a>
+A context view describes the relationships, dependencies, and the interactions between the system and its environment.Many architecture descriptions focus on views that model the system’s internal structures, data elements, interactions, and operation. Architects tend to assume that the “outward-facing” information — the system’s runtime context, its scope and requirements, and so forth – is clearly and unambiguously defined elsewhere. However, you often need to include a definition of the system’s context as part of your architectural description.<a href="#ref_con1">[2]</a>
 
 ![Figure 1 overall structure](https://images0.cnblogs.com/blog/672227/201501/051006006097175.png)
 
@@ -221,6 +221,6 @@ The data flow in Scrapy is controlled by the execution engine, and goes like thi
 
 ## References
 
-<a name="ref_sta1">[1]</a>Wikipedia. Stakeholder (corporate)[EB/OL］.Stakeholder (corporate) - Wikipedia，https://en.wikipedia.org/wiki/Stakeholder_(corporate)\
+<a name="ref_sta1">[1]</a>Wikipedia. Stakeholder (corporate)[EB/OL］.Stakeholder (corporate) - Wikipedia，https://en.wikipedia.org/wiki/Stakeholder_(corporate)
 
 <a name="ref_con1">[2]</a>[https://scrapy.org/](https://scrapy.org/)
