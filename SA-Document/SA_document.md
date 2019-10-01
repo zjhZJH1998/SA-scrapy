@@ -109,4 +109,34 @@ The following figure shows the Power Interest Grid. Power Interest Grid contains
 
 ## Content-view
 
+A context view describes the relationships, dependencies, and the interactions between the system and its environment.Many architecture descriptions focus on views that model the system’s internal structures, data elements, interactions, and operation. Architects tend to assume that the “outward-facing” information — the system’s runtime context, its scope and requirements, and so forth – is clearly and unambiguously defined elsewhere. However, you often need to include a definition of the system’s context as part of your architectural description.
+
+![Figure 1 overall structure](https://images0.cnblogs.com/blog/672227/201501/051006006097175.png)
+
+### System Scope
+Scrapy is an open source and collaborative framework for extracting the data you need from websites.The client can use this framework in a fast, simple, yet extensible way[[1]]().It is originally designed for page fetching (more specifically, Web fetching) and can aslo be used to retrieve data returned by the API (for example, [Amazon Associates Web Services](http://aws.amazon.com/associates/)) or general purpose Web crawlers.
+### Client
+The attraction is that Scrapy is a framework that anyone can easily modify to suit their needs.Scrapy features a fast, high-level screen scraping and web scraping framework developed in Python for scraping web sites and extracting structured data from pages.Scrapy has a wide range of applications, including data mining, monitoring and automated testing. Reactive updates are dead simple.
+
+>* Scrapy is asynchronous
+* adopt more readable xpath instead of regular expression
+* powerful statistical and log system
+* crawl on different urls at the same time
+* shell mode is supported to facilitate independent debugging
+* write middleware to make it easier to write a uniform filter
+* store the database by pipeline
+###3.3 External Entities
+The figure below shows the context view of Scrapy.
+
+![](https://s2.ax1x.com/2019/10/01/uUrjVx.png)
+
+* Developing languages: Python
+* Runs on: Windows, macOS, Linux, Andriod, iOS…
+* Supported by：browsers(chrome、ie、Firefox…)
+* Communication: Srapy community, Srapy Chinese website, GitHub, stackoverflow…
+* Programmed in: IPython, Pycharm, Anaconda, Jupyter Notebook…
+* Competes with: Crawley, Portia, Grab…
+
+[1][https://scrapy.org/](https://scrapy.org/)
+
 ## Development-view
