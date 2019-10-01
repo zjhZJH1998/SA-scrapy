@@ -24,8 +24,6 @@ While the development is open-source, the amount of documentation about contribu
 
 ## Stakeholders
 
-## Stakeholders
-
 >   A stakeholder is a member of "groups without whose support the organization would cease to exist".
 
 As the definition above, stakeholders in Scrapy are people who are interested in and influence Scrapy. More specificly, stakeholders can adivce to it and make some influence on Scrapy's policy and so on. So, we will firstly have a glimpse on the overview of the stakeholders which includes developers, maintainers, users and other kinds of stakeholders which are of vital importance. After we have had an overview of those kinds of stakeholdes, we will have a deeper appreciation of those stakeholders and try to give the Power Interest Graph of Scrapy in which we will analyze the reason.
@@ -141,49 +139,48 @@ The figure below shows the context view of Scrapy.
 
 ## Development-view
 
-#4.Development View
 This section describes the architecture that supports React development process. First, we will describe principles and guidelines that govern the development of Scrapy. This will be followed by source code and module organizaton.
 ##4.1 Development characteristics
 Scrapy is a fast high-level web crawling framework, used to crawl websites and extract structured data from their pages. It can be used for a wide range of purposes, from data mining to monitoring and automated testing[[1]](). It's normal for us to compare Scrapy to Request lib, so the developent of characteristics of Scrapy should be  recounted.
 
-####Asynchronous processing
+#### Asynchronous processing
 One of the main advantages about Scrapy is that: requests are scheduled and processed asynchronously. This means that Scrapy doesn’t need to wait for a request to be finished and processed, it can send another request or do other things in the meantime. This also means that other requests can keep going even if some request fails or an error happens while handling it.[[2]]()
-####Convenient request settings
+#### Convenient request settings
 Scrapy  gives you control over the politeness of the crawl through a few settings You can do things like setting a download delay between each request, limiting amount of concurrent requests per domain or per IP, and even [using an auto-throttling extension](https://docs.scrapy.org/en/latest/topics/autothrottle.html#topics-autothrottle) that tries to figure out these automatically.
 ####Built-in parser
  Built-in support for selecting and extracting data from HTML/XML sources using extended CSS selectors and XPath expressions, with helper methods to extract using regular expressions.
 #### interactive shell console
 The Scrapy shell is an interactive shell where you can try and debug your scraping code very quickly, without having to run the spider. It’s meant to be used for testing data extraction code, but you can actually use it for testing any kind of code as it is also a regular Python shell.[[3]]()
-####wild middlewares for handling
+#### wild middlewares for handling
 Scrapy privides wide range of built-in extensions and middlewares for handling:cookies and session handling, http compression,authentication, caching, user-agent spoofing, robots.txt, crawl depth restriction and more.[4]()
 
-##4.1 Code Organization
+### Code Organization
 The following figure shows the source code organization of scrapy.
 ![Figure1 code organization of scrapy](https://upload-images.jianshu.io/upload_images/17534427-80fbf5f00989de4e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-*  ####Test files
+#### Test files
 Source code attachs a test project, placed in the tests folder. This test project create ```TestSprider``` object to implement spider and use ```ScrapyRedisBloomFilter``` to remove duplication. We can use console to ```scrapy crawl test``` to run this test project. It casts most of functions of scrapy.
-*  ####Funtional  files
+#### Funtional  files
 The functionality part contains the components that are responsible for functions of the project. *Commands* implements the console tool of scrapy. *http* integrate the HTTP processing functions. The most important  is *core* , which includes the significant module of scrapy such as *engine*, *scheduler*, *scraper* and so on. These core modules'  relationship will be analized later.
-*  ####Documentations
+#### Documentations
 The documentation section contains codes used to demonstrate and generate the documentation of Scrapy. They are often written in RST format. *README.rst* contains the usage and installation of  Scrapy. *docs* contains the Materials used by documents like pictures and logo.
-*  ####Others
+#### Others
 Scrapy has other files, such as version log files, contributor log files, and relatively independent script files.
 
-##4.3 Module Organization
+### Module Organization
 This section focuses on the main modules of scrapy and their interactions.
-####Modules introduction
-*  #####Scrapy Engine
+#### Modules introduction
+##### Scrapy Engine
 The engine is responsible for controlling the data flow between all components of the system, and triggering events when certain actions occur. 
-*  #####Scheduler
+##### Scheduler
 The Scheduler receives requests from the engine and enqueues them for feeding them later (also to the engine) when the engine requests them.
-*  #####Downloader
+##### Downloader
 The Downloader is responsible for fetching web pages and feeding them to the engine which, in turn, feeds them to the spiders.
-*  #####Spiders
+##### Spiders
 Spiders are custom classes written by Scrapy users to parse responses and extract items (aka scraped items) from them or additional requests to follow.
-*  #####Item Pipeline
+##### Item Pipeline
 The Item Pipeline is responsible for processing the items once they have been extracted (or scraped) by the spiders. Typical tasks include cleansing, validation and persistence (like storing the item in a database). 
 The following diagram shows an overview of the Scrapy architecture with its components and an outline of the data flow that takes place inside the system (shown by the red arrows).
-####Modules' relationship and Data flow
+#### Modules' relationship and Data flow
 
 The following diagram shows an overview of the Scrapy architecture with its components and an outline of the data flow that takes place inside the system (shown by the red arrows). The data flow is also described below.[5]()
 
