@@ -221,5 +221,6 @@ The data flow in Scrapy is controlled by the execution engine, and goes like thi
 
 ## References
 
-<a name="ref_sta1">[1]</a>Wikipedia. Stakeholder (corporate)[EB/OL］.Stakeholder (corporate) - Wikipedia，https://en.wikipedia.org/wiki/Stakeholder_(corporate)
+<a name="ref_sta1">[1]</a>Wikipedia. Stakeholder (corporate)[EB/OL］.Stakeholder (corporate) - Wikipedia，https://en.wikipedia.org/wiki/Stakeholder_(corporate)\
+
 <a name="ref_con1">[2]</a>[https://scrapy.org/](https://scrapy.org/)
