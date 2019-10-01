@@ -24,4 +24,6 @@ While the development is open-source, the amount of documentation about contribu
 
 ## Stakeholders
 
+## Content-view
+
 ## Development-view
