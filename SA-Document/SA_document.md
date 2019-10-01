@@ -23,9 +23,12 @@ While the development is open-source, the amount of documentation about contribu
 ## Introduction
 
 As we enter the era of big data, data analysis and data collection technologies become particularly important. With the demand of an easy to collect data, scrapy arises.Scrapy is an application framework written to crawl web site data and extract structural data. It can be used in a series of programs including data mining, information processing or storing historical data.It is originally designed for page fetching (more specifically, Web fetching) and can be used to retrieve data returned by the API (for example, Amazon Associates Web Services) or general purpose Web crawlers.
+
 ![](https://s2.ax1x.com/2019/10/01/uUyg7q.png)
+
 *Fugure 1: The main page of scrapy*
 
+This document gives an overview of the overarching architecture of the plotly.js project. It sets the scenes by introducing the project and discussing its stakeholders. It then takes on different viewpoints and perspectives as defined by Rozanski and Woods  to analyse scrapy's performance, in addition to discussing the technical debt hidden in the depths of the codebase.
 
 ## Stakeholders
 
