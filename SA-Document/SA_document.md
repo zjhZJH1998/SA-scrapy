@@ -28,7 +28,7 @@ As we enter the era of big data, data analysis and data collection technologies 
 
 *Fugure 1: The main page of scrapy*
 
-This document gives an overview of the overarching architecture of the plotly.js project. It sets the scenes by introducing the project and discussing its stakeholders. It then takes on different viewpoints and perspectives as defined by Rozanski and Woods  to analyse scrapy's performance, in addition to discussing the technical debt hidden in the depths of the codebase.
+This document gives an overview of the overarching architecture of the scrapy project. It sets the scenes by introducing the project and discussing its stakeholders. It then takes on different viewpoints and perspectives as defined by Rozanski and Woods  to analyse scrapy's performance, in addition to discussing the technical debt hidden in the depths of the codebase.
 
 ## Stakeholders
 
