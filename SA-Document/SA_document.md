@@ -1,3 +1,3 @@
 Scrapy--A Fast and Powerful Scraping and Web Crawling Framework
 ====
-![](https://imgchr.com/i/uUDwhF)
+![](https://s2.ax1x.com/2019/10/01/uUDwhF.jpg)
