@@ -10,6 +10,6 @@ Name list
 Project name
 ----
 Scrapy：
-An open source and collaborative framework for extracting the data you need from websites.
+An open source and collaborative framework for extracting the data you need from websites.\
 In a fast, simple, yet extensible way.
 
