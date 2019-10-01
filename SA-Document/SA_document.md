@@ -131,7 +131,7 @@ The attraction is that Scrapy is a framework that anyone can easily modify to su
 * shell mode is supported to facilitate independent debugging
 * write middleware to make it easier to write a uniform filter
 * store the database by pipeline
-###3.3 External Entities
+### External Entities
 The figure below shows the context view of Scrapy.
 
 ![](https://s2.ax1x.com/2019/10/01/uUrjVx.png)
@@ -142,7 +142,7 @@ The figure below shows the context view of Scrapy.
 * Communication: Srapy community, Srapy Chinese website, GitHub, stackoverflow…
 * Programmed in: IPython, Pycharm, Anaconda, Jupyter Notebook…
 * Competes with: Crawley, Portia, Grab…
-
+<a name="#ref_con1">[2]</a>
 [1][https://scrapy.org/](https://scrapy.org/)
 
 ## Development-view
@@ -223,3 +223,4 @@ The data flow in Scrapy is controlled by the execution engine, and goes like thi
 ## References
 
 <a name="ref_sta1">[1]</a>Wikipedia. Stakeholder (corporate)[EB/OL］.Stakeholder (corporate) - Wikipedia，https://en.wikipedia.org/wiki/Stakeholder_(corporate)
+<a name="ref_con1">[2]</a>[https://scrapy.org/](https://scrapy.org/)
