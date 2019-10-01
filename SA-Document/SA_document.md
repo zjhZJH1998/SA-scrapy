@@ -148,18 +148,18 @@ The figure below shows the context view of Scrapy.
 
 This section describes the architecture that supports React development process. First, we will describe principles and guidelines that govern the development of Scrapy. This will be followed by source code and module organizaton.
 ##4.1 Development characteristics
-Scrapy is a fast high-level web crawling framework, used to crawl websites and extract structured data from their pages. It can be used for a wide range of purposes, from data mining to monitoring and automated testing[[1]](). It's normal for us to compare Scrapy to Request lib, so the developent of characteristics of Scrapy should be  recounted.
+Scrapy is a fast high-level web crawling framework, used to crawl websites and extract structured data from their pages. It can be used for a wide range of purposes, from data mining to monitoring and automated testing<a href="#ref_dev_1">[3]</a>. It's normal for us to compare Scrapy to Request lib, so the developent of characteristics of Scrapy should be  recounted.
 
 #### Asynchronous processing
-One of the main advantages about Scrapy is that: requests are scheduled and processed asynchronously. This means that Scrapy doesn’t need to wait for a request to be finished and processed, it can send another request or do other things in the meantime. This also means that other requests can keep going even if some request fails or an error happens while handling it.[[2]]()
+One of the main advantages about Scrapy is that: requests are scheduled and processed asynchronously. This means that Scrapy doesn’t need to wait for a request to be finished and processed, it can send another request or do other things in the meantime. This also means that other requests can keep going even if some request fails or an error happens while handling it.<a href="#ref_dev_2">[4]</a>
 #### Convenient request settings
 Scrapy  gives you control over the politeness of the crawl through a few settings You can do things like setting a download delay between each request, limiting amount of concurrent requests per domain or per IP, and even [using an auto-throttling extension](https://docs.scrapy.org/en/latest/topics/autothrottle.html#topics-autothrottle) that tries to figure out these automatically.
 ####Built-in parser
  Built-in support for selecting and extracting data from HTML/XML sources using extended CSS selectors and XPath expressions, with helper methods to extract using regular expressions.
 #### interactive shell console
-The Scrapy shell is an interactive shell where you can try and debug your scraping code very quickly, without having to run the spider. It’s meant to be used for testing data extraction code, but you can actually use it for testing any kind of code as it is also a regular Python shell.[[3]]()
+The Scrapy shell is an interactive shell where you can try and debug your scraping code very quickly, without having to run the spider. It’s meant to be used for testing data extraction code, but you can actually use it for testing any kind of code as it is also a regular Python shell.<a href="#ref_dev_3">[5]</a>
 #### wild middlewares for handling
-Scrapy privides wide range of built-in extensions and middlewares for handling:cookies and session handling, http compression,authentication, caching, user-agent spoofing, robots.txt, crawl depth restriction and more.[4]()
+Scrapy privides wide range of built-in extensions and middlewares for handling:cookies and session handling, http compression,authentication, caching, user-agent spoofing, robots.txt, crawl depth restriction and more.<a href="#ref_dev_4">[6]</a>
 
 ### Code Organization
 The following figure shows the source code organization of scrapy.
@@ -189,7 +189,7 @@ The Item Pipeline is responsible for processing the items once they have been ex
 The following diagram shows an overview of the Scrapy architecture with its components and an outline of the data flow that takes place inside the system (shown by the red arrows).
 #### Modules' relationship and Data flow
 
-The following diagram shows an overview of the Scrapy architecture with its components and an outline of the data flow that takes place inside the system (shown by the red arrows). The data flow is also described below.[5]()
+The following diagram shows an overview of the Scrapy architecture with its components and an outline of the data flow that takes place inside the system (shown by the red arrows). The data flow is also described below.<a href="#ref_dev_5">[7]</a>
 
 ![Figure 2 data flow](https://upload-images.jianshu.io/upload_images/17534427-a835f7ea3b5767fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 The data flow in Scrapy is controlled by the execution engine, and goes like this:
@@ -204,23 +204,19 @@ The data flow in Scrapy is controlled by the execution engine, and goes like thi
 8.  The *Engine* sends processed items to *Item Pipelines*, then send processed Requests to the *Scheduler* and asks for possible next Requests to crawl.
 9.  The process repeats (from step 1) until there are no more requests from the *Schedules*
 
-
-
-
-
-
-[1][https://docs.scrapy.org/en/latest/](https://docs.scrapy.org/en/latest/)
-
-[2][https://www.cnblogs.com/jclian91/p/9799697.html](https://www.cnblogs.com/jclian91/p/9799697.html)
-
-[3][https://docs.scrapy.org/en/latest/topics/shell.html#topics-shell](https://docs.scrapy.org/en/latest/topics/shell.html#topics-shell)
-
-[4][https://www.cnblogs.com/xieqiankun/p/know_middleware_of_scrapy_1.html](https://www.cnblogs.com/xieqiankun/p/know_middleware_of_scrapy_1.html)
-
-[5][https://docs.scrapy.org/en/latest/topics/architecture.html](https://docs.scrapy.org/en/latest/topics/architecture.html)
-
 ## References
 
 <a name="ref_sta1">[1]</a>Wikipedia. Stakeholder (corporate)[EB/OL］.Stakeholder (corporate) - Wikipedia，https://en.wikipedia.org/wiki/Stakeholder_(corporate)
 
 <a name="ref_con1">[2]</a>[https://scrapy.org/](https://scrapy.org/)
+
+<a href="ref_dev_1">[3]</a>[https://docs.scrapy.org/en/latest/](https://docs.scrapy.org/en/latest/)
+
+<a href="#ref_dev_2">[4]</a>[https://www.cnblogs.com/jclian91/p/9799697.html](https://www.cnblogs.com/jclian91/p/9799697.html)
+
+<a href="#ref_dev_3">[5]</a>[https://docs.scrapy.org/en/latest/topics/shell.html#topics-shell](https://docs.scrapy.org/en/latest/topics/shell.html#topics-shell)
+
+<a href="#ref_dev_4">[6]</a>[https://www.cnblogs.com/xieqiankun/p/know_middleware_of_scrapy_1.html](https://www.cnblogs.com/xieqiankun/p/know_middleware_of_scrapy_1.html)
+
+<a href="#ref_dev_5">[7]</a>[https://docs.scrapy.org/en/latest/topics/architecture.html](https://docs.scrapy.org/en/latest/topics/architecture.html)
+
