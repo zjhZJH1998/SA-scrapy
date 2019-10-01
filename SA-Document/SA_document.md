@@ -212,11 +212,11 @@ The data flow in Scrapy is controlled by the execution engine, and goes like thi
 
 <a href="ref_dev_1">[3]</a>[https://docs.scrapy.org/en/latest/](https://docs.scrapy.org/en/latest/)
 
-<a href="#ref_dev_2">[4]</a>[https://www.cnblogs.com/jclian91/p/9799697.html](https://www.cnblogs.com/jclian91/p/9799697.html)
+<a href="ref_dev_2">[4]</a>[https://www.cnblogs.com/jclian91/p/9799697.html](https://www.cnblogs.com/jclian91/p/9799697.html)
 
-<a href="#ref_dev_3">[5]</a>[https://docs.scrapy.org/en/latest/topics/shell.html#topics-shell](https://docs.scrapy.org/en/latest/topics/shell.html#topics-shell)
+<a href="ref_dev_3">[5]</a>[https://docs.scrapy.org/en/latest/topics/shell.html#topics-shell](https://docs.scrapy.org/en/latest/topics/shell.html#topics-shell)
 
-<a href="#ref_dev_4">[6]</a>[https://www.cnblogs.com/xieqiankun/p/know_middleware_of_scrapy_1.html](https://www.cnblogs.com/xieqiankun/p/know_middleware_of_scrapy_1.html)
+<a href="ref_dev_4">[6]</a>[https://www.cnblogs.com/xieqiankun/p/know_middleware_of_scrapy_1.html](https://www.cnblogs.com/xieqiankun/p/know_middleware_of_scrapy_1.html)
 
-<a href="#ref_dev_5">[7]</a>[https://docs.scrapy.org/en/latest/topics/architecture.html](https://docs.scrapy.org/en/latest/topics/architecture.html)
+<a href="ref_dev_5">[7]</a>[https://docs.scrapy.org/en/latest/topics/architecture.html](https://docs.scrapy.org/en/latest/topics/architecture.html)
 
