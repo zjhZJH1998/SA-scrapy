@@ -1,13 +1,15 @@
-基本信息
+Basic information
 ====
-组员名单
+Name list
 ----
 王子豪 2017302580257\
 王怿临 2017302580258\
 张新豪\
 王初程 2017302580267
 
-项目内容
+Project name
 ----
-Scrapy爬虫框架
+Scrapy：
+An open source and collaborative framework for extracting the data you need from websites.
+In a fast, simple, yet extensible way.
 
