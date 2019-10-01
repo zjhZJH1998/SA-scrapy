@@ -75,7 +75,7 @@ As the definition above, stakeholders in Scrapy are people who are interested in
 
 The following figure shows the stakeholders mentioned above, and it proides a channel through which people can have a more direct impression of those stakeholders.
 
-!!!此处插入“stakeholders图一.jpg”
+![](https://s2.ax1x.com/2019/10/01/uUrhV0.jpg)
 
 *Figure 1: Stakeholders of Scrapy*
 
@@ -83,7 +83,7 @@ The following figure shows the stakeholders mentioned above, and it proides a ch
 
 The following figure shows the Power Interest Grid. Power Interest Grid contains the main stakeholder categories and more detailed explanation will be listed.
 
-!!!此处插入“stakeholders图二.jpg”
+![](https://s2.ax1x.com/2019/10/01/uUr55T.jpg)
 
 *Figure 2: Power Interest Grid*
 
@@ -104,7 +104,7 @@ The following figure shows the Power Interest Grid. Power Interest Grid contains
     Core developers and acquirers of Scrapy are stakeholders who have significant interest and power in the development of Scrapy. And in Scrapy, developers are also maintainers, so those people will guarantee it to run without error and provide new features. At the same time, acquirers will provide many kinds of support. Both of them can also largely influence Scrapy, so they will be in the high power and low interest part.
 
 
-## References
+### References
 [1] Wikipedia. Stakeholder (corporate)[EB/OL］.Stakeholder (corporate) - Wikipedia，https://en.wikipedia.org/wiki/Stakeholder_(corporate)
 
 ## Content-view
