@@ -115,7 +115,7 @@ The following figure shows the Power Interest Grid. Power Interest Grid contains
 
 ## Content-view
 
-A context view describes the relationships, dependencies, and the interactions between the system and its environment.Many architecture descriptions focus on views that model the system’s internal structures, data elements, interactions, and operation. Architects tend to assume that the “outward-facing” information — the system’s runtime context, its scope and requirements, and so forth – is clearly and unambiguously defined elsewhere. However, you often need to include a definition of the system’s context as part of your architectural description.
+A context view describes the relationships, dependencies, and the interactions between the system and its environment.Many architecture descriptions focus on views that model the system’s internal structures, data elements, interactions, and operation. Architects tend to assume that the “outward-facing” information — the system’s runtime context, its scope and requirements, and so forth – is clearly and unambiguously defined elsewhere. However, you often need to include a definition of the system’s context as part of your architectural description.<a name="#ref_con1">[2]</a>
 
 ![Figure 1 overall structure](https://images0.cnblogs.com/blog/672227/201501/051006006097175.png)
 
@@ -142,7 +142,6 @@ The figure below shows the context view of Scrapy.
 * Communication: Srapy community, Srapy Chinese website, GitHub, stackoverflow…
 * Programmed in: IPython, Pycharm, Anaconda, Jupyter Notebook…
 * Competes with: Crawley, Portia, Grab…
-<a name="#ref_con1">[2]</a>
 [1][https://scrapy.org/](https://scrapy.org/)
 
 ## Development-view
