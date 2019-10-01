@@ -17,7 +17,7 @@ While the development is open-source, the amount of documentation about contribu
 
 - [Introduction](#Introduction)
 - [Stakeholders](#Stakeholders)
-- [Context View](#Context-view)
+- [Content View](#Context-view)
 - [Development View](#Development-view)
 
 ## Introduction
