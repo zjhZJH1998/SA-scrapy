@@ -17,7 +17,7 @@ While the development is open-source, the amount of documentation about contribu
 
 - [Introduction](#Introduction)
 - [Stakeholders](#Stakeholders)
-- [Content View](#Content-view)
+- [Context View](#Context-view)
 - [Development View](#Development-view)
 
 ## Introduction
@@ -109,7 +109,7 @@ The following figure shows the Power Interest Grid. Power Interest Grid contains
     
     Core developers and acquirers of Scrapy are stakeholders who have significant interest and power in the development of Scrapy. And in Scrapy, developers are also maintainers, so those people will guarantee it to run without error and provide new features. At the same time, acquirers will provide many kinds of support. Both of them can also largely influence Scrapy, so they will be in the high power and low interest part.
 
-## Content-view
+## Context-view
 
 A context view describes the relationships, dependencies, and the interactions between the system and its environment.Many architecture descriptions focus on views that model the system’s internal structures, data elements, interactions, and operation. Architects tend to assume that the “outward-facing” information — the system’s runtime context, its scope and requirements, and so forth – is clearly and unambiguously defined elsewhere. However, you often need to include a definition of the system’s context as part of your architectural description.<a href="#ref_con1">[2]</a>
 
