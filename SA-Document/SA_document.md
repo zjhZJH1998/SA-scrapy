@@ -8,7 +8,7 @@ As the definition above, stakeholders in Angular are interested in and influence
 
 -   Acquirers
     
-   Acquirers, or called as investors, is the first part of the chain which decides the survival of tech companies. They are more concerned about the profit model of the product and the specific operation cost and market profit of the product. Angular's predecessor was Angular. AngularJS was born in 2009 and was created by **Misko Hevery** and others and later acquired by **Google**. Angular is built by a team of engineers who share a passion for making web development feel effortless, and now Angular is managed by them and their collaborators. Actually they are a large group of people, so we just list some of them.
+    Acquirers, or called as investors, is the first part of the chain which decides the survival of tech companies. They are more concerned about the profit model of the product and the specific operation cost and market profit of the product. Angular's predecessor was Angular. AngularJS was born in 2009 and was created by **Misko Hevery** and others and later acquired by **Google**. Angular is built by a team of engineers who share a passion for making web development feel effortless, and now Angular is managed by them and their collaborators. Actually they are a large group of people, so we just list some of them.
 
 ![](https://s2.ax1x.com/2019/10/03/uwbB4K.png)
 
@@ -30,7 +30,7 @@ As the definition above, stakeholders in Angular are interested in and influence
 
 -   Maintainers
 
-   Maintainers are responsible for managing the development and evolution of Angular. They discuss the development direction of Angular. What’s more, they accept and review pull-requests. We can view the main contributors on GitHub. They are the same as the Developers above.
+    Maintainers are responsible for managing the development and evolution of Angular. They discuss the development direction of Angular. What’s more, they accept and review pull-requests. We can view the main contributors on GitHub. They are the same as the Developers above.
  
 -   Users
 
@@ -46,7 +46,7 @@ As the definition above, stakeholders in Angular are interested in and influence
 
 -   Competitors
     
-   Obviously, there are a lot of companies which also engaged in front-end development, such as **Vue** and **React**.
+    Obviously, there are a lot of companies which also engaged in front-end development, such as **Vue** and **React**.
 
 ### Power Interest Grid
 
