@@ -16,7 +16,7 @@ As the definition above, stakeholders in Angular are interested in and influence
 
 -   Developers
 
-    BAs an open-source program on GitHub, dozens of developers would like to take part in this job. We can easily find them on GitHub. To make it clearer who contributed the most to Angular, here we list the contributors sorted by number of commits.
+    As an open-source program on GitHub, dozens of developers would like to take part in this job. We can easily find them on GitHub. To make it clearer who contributed the most to Angular, here we list the contributors sorted by number of commits.
 
     Developer     | Commits | Additions | Deletions
     --------------|---------|-----------|----------
